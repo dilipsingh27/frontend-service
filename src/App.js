@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Middle from './components/Middle';
 import './App.css';
+import AddField from './components/AddField';
 
 const App = () => {
     return (
@@ -11,6 +12,9 @@ const App = () => {
             </div>
             <div className='abc'>
                 <Middle/>
+            </div>
+            <div className='def'>
+                <AddField/>
             </div>
         </div>
     );

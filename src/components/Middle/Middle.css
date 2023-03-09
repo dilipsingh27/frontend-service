@@ -14,7 +14,9 @@
 .content-header {
     color:rgb(98,98,98);
     margin: 0 20px;
-    font-size: 40px;
+    /* font-size: 40px; */
+    height:110px;
+    font-size: 30px;
 }
 .content-table {
     display: flex;

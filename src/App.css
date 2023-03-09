@@ -17,3 +17,8 @@
   flex-direction: column;
   width:22%;
 }
+.def {
+  display: flex;
+  flex-direction: column;
+  width:56%;
+}

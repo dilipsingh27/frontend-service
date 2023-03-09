@@ -1,8 +1,12 @@
 import React from 'react';
+import { useState } from 'react';
 import './Middle.css';
 import darkLogo from '../../assets/icon-search-dark@3x.png';
+import Model from '../Model';
 
 const Middle = () => {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <div className='middle-panel'>
             <div className="content-type-header">
@@ -21,9 +25,10 @@ const Middle = () => {
                     </div>
                 </div>
 
-                <div className='content-type-submit'>
+                <div className='content-type-submit' onClick={() => setShowModal(true)}>
                     <p>+ New Type</p>
                 </div>
+                <Model onClose={() => setShowModal(false)} show={showModal} />
 
                 <div className='content-name-holder'>
                     <div className='content-type-name'>
@@ -51,7 +56,7 @@ const Middle = () => {
                         <p>13</p>
                     </div>
                 </div>
-                
+
                 
             </div>
             <div className="content-submission">
