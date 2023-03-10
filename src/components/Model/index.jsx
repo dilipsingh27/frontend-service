@@ -29,7 +29,7 @@ const Model = (props) => {
         else{
             const res = await axios({
                 method:'POST',
-                url:'http://localhost:5000/api/content',
+                url:'http://localhost:5000/api/contents',
                 data:{name:content}
             });
             console.log(res);
@@ -50,7 +50,7 @@ const Model = (props) => {
                 </div>
                 <div className='modal-footer'>
                     <button onClick={props.onClose} className='modal-close-button'>Close</button>
-                    <button className='modal-create-button' onClick={()=>{handleSubmit();}}>Create</button>
+                    <button className='modal-create-button' onClick={handleSubmit}>Create</button>
                 </div>
             </div>
         </div>
@@ -60,7 +60,6 @@ const Model = (props) => {
 Model.propTypes = {
     onClose: propTypes.func.isRequired,
     show: propTypes.bool,
-    children: propTypes.node,
     contentId: propTypes.string
 };
 

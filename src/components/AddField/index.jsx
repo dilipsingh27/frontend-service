@@ -3,12 +3,10 @@ import './AddField.css';
 import editIcon from '../../assets/user-edit-text-message-note@3x.png';
 import proptypes from 'prop-types';
 import Model from '../Model';
+// import AddFieldModel from '../AddFieldModel';
 
 const AddField = ({contentById,setShowModal,showModal}) => {
-    // console.log(contentById);
-
-    
-
+    console.log(contentById);
 
     return (
         <div className='add-all-field'>
@@ -28,6 +26,7 @@ const AddField = ({contentById,setShowModal,showModal}) => {
                 <Model onClose={() => setShowModal(false)} show={showModal} contentId = {contentById.id}/>
                 
             </div>
+
             <div className='no-of-field'>
                 {/* <p>{Object.keys(contentById.fields).length}</p> */}
             </div>
@@ -38,6 +37,7 @@ const AddField = ({contentById,setShowModal,showModal}) => {
                 <div className="add-field">
                     <p>Add another field</p>
                 </div>
+
                 {
                     contentById.fields && Object.keys(contentById.fields).map((field,id) => {
                         return (
