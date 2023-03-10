@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Dashboard from './screens/Dashboard';
 import Login from './screens/Login';
 import Register from './screens/Register';
