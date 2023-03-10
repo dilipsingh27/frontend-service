@@ -10,13 +10,13 @@ const Model = (props) => {
         return null;
     }
 
-
     const handleChange = (e) => {
         setContent(e.target.value);
     };
 
 
     const handleSubmit = async() => {
+         
         if(props.contentId){
             const res = await axios({
                 method:'PATCH',
@@ -60,7 +60,8 @@ const Model = (props) => {
 Model.propTypes = {
     onClose: propTypes.func.isRequired,
     show: propTypes.bool,
-    contentId: propTypes.string
+    contentId: propTypes.string,
+    oldKey: propTypes.string
 };
 
 export default Model;

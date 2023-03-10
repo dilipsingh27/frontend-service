@@ -5,6 +5,7 @@ import darkLogo from '../../assets/icon-search-dark@3x.png';
 import Model from '../Model';
 import proptypes from 'prop-types';
 import axios from 'axios';
+import deleteIcon from '../../assets/deleteIcon.png';
 
 const Middle = ({contents,setContentById,setShowModal,showModal}) => {
     console.log('contents',contents);
@@ -20,6 +21,16 @@ const Middle = ({contents,setContentById,setShowModal,showModal}) => {
             .catch((err) => {
                 console.log(err);
             });
+    };
+
+    const deleteContent =async (id) => {
+        // console.log(field,id);
+        const res = await axios({
+            method:'DELETE',
+            url:`http://localhost:5000/api/deleteContent/${id}`,
+        });
+        window.location.reload();
+        console.log(res);
     };
 
     return (
@@ -54,7 +65,11 @@ const Middle = ({contents,setContentById,setShowModal,showModal}) => {
                             </div>
                             <div className='content-type-entries'>
                                 <p>{Object.keys(content.fields).length}</p>
+                                <div className="delete-content" onClick={()=> deleteContent(content.id)}>
+                                    <img src={deleteIcon} alt="" />
+                                </div>
                             </div>
+                   
                         </div>
                     ))
                 }

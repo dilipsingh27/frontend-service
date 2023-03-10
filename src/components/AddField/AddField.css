@@ -34,8 +34,12 @@
 .content-type-edit {
     margin-left: 10px;
 }
+.content-type-edit > img {
+    height:25px;
+    width:25px;
+}
 .no-of-field {
-    background-color: red;
+    background-color: rgb(128,128,128);
     height:60px;
     background-color: rgb(235,238,253);
 }
@@ -48,7 +52,7 @@
 
 .total-fields {
     background-color:  rgb(235,238,253);
-    height:640px;
+    height:663px;
 }
 
 .add-field {
@@ -65,6 +69,7 @@
     margin-right: 20px;
     background-color: rgb(244,246,254);
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .show-field {
@@ -109,8 +114,16 @@
 .field-edit{
     margin-right: 20px;
 }
+.field-edit > img{
+    height:25px;
+    width:25px;
+}
 .field-delete{
     margin-right: 20px;
+}
+.field-delete > img {
+    height:25px;
+    width:25px;
 }
 .field-name {
     color:rgb(58,58,58);

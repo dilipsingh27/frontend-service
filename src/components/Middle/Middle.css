@@ -25,7 +25,7 @@
     padding-left: 25px;
     padding-right:25px;
     background-color: rgb(212,214,228);
-    height:800px;
+    height:822px;
 }
 
 .table-header {
@@ -55,6 +55,7 @@
     align-items: center;
     color:rgb(79,32,198);
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .content-name-holder {
@@ -72,6 +73,19 @@
     /* color: black; */
 }
 .ssss{
-    color: red!important;
+    color: rgb(128,128,128);
     z-index: 9999;
+}
+
+.content-type-entries{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-content > img {
+        height:25px;
+        width:25px;
+        margin-left: 10px;
 }

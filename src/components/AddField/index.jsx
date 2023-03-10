@@ -5,6 +5,8 @@ import proptypes from 'prop-types';
 import Model from '../Model';
 import AddFieldModel from '../AddFieldModel';
 import axios from 'axios';
+import userPencil from '../../assets/userPencil.png';
+import deleteIcon from '../../assets/deleteIcon.png';
 
 const AddField = ({contentById,showModal,setShowModal}) => {
     const [showFieldModal, setShowFieldModal] = React.useState(false);
@@ -34,7 +36,7 @@ const AddField = ({contentById,showModal,setShowModal}) => {
                     <p>{contentById.name}</p>
                 </div>
                 <div className="content-type-edit" onClick={() => setShowModal(true)} >
-                    <img src={editIcon} alt="" />
+                    <img src={userPencil} alt="" />
                 </div>
                 <Model onClose={() => setShowModal(false)} show={showModal} contentId = {contentById.id}/>
                 
@@ -65,11 +67,12 @@ const AddField = ({contentById,showModal,setShowModal}) => {
                                         <p>Text</p>
                                     </div>
                                     <div className="field-icon" >
-                                        <div className="field-edit" >
+                                        <div className="field-edit" onClick={() => setShowModal(true)}>
                                             <img src={editIcon} alt=""/>
-                                        </div>
+                                        </div> 
+                                        <Model onClose={() => setShowModal(false)} show={showModal} contentId = {contentById.id} oldKey = {field}/>
                                         <div className="field-delete" onClick={()=> deleteField(field,contentById.id)}>
-                                            <img src={editIcon} alt="" />
+                                            <img src={deleteIcon} alt="" />
                                         </div>
                                     </div>
                                 </div>
