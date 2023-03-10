@@ -36,11 +36,13 @@
     padding-left: 20px;
     margin-top: 20px;
     font-size: 18px;
-    color:gray;
+    color:rgb(173,173,173);
+    font-weight:bold;
 }
 
 .collection-list li {
     margin-bottom: 20px;
+    color: rgb(125,125,125);
 }
 
 .content-builder {
@@ -56,5 +58,6 @@
     /* padding-top: 10px; */
     font-size: 18px;
     background-color: rgb(34, 31, 31);
-    color: gray;
+    color: rgb(243,243,243);
+    font-weight:bold;
 }

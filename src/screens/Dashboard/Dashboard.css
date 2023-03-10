@@ -1,0 +1,23 @@
+/* *{
+  margin:0;
+  padding:0;
+} */
+.dashboard {
+    display:flex;
+    flex-direction: row;
+}
+  .header{
+    display:flex;
+    flex-direction: column;
+    width:22%;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    width:22%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width:56%;
+  }

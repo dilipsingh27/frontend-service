@@ -1,7 +1,9 @@
 import React from 'react';
 import './Header.css';
+import proptypes from 'prop-types';
 
-const Header = () => {
+
+const Header = ({contents}) => {
     return (
         <>
             <div className='left-panel'>
@@ -16,11 +18,11 @@ const Header = () => {
                     </div>
                     <div className="collection-list">
                         <ul>
-                            <li>Collection 1</li>
-                            <li>Collection 2</li>
-                            <li>Collection 3</li>
-                            <li>Collection 4</li>
-                            <li>Collection 5</li>
+                            {
+                                contents.map((content,id) => {
+                                    return <li key={id}>{content.name}</li>;
+                                })
+                            }
                         </ul>
                     </div>
                     <div className="content-builder">
@@ -32,4 +34,8 @@ const Header = () => {
     );
 };
 
+Header.propTypes = {
+    contents: proptypes.array.isRequired
+};
 export default Header;
+

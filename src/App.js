@@ -1,21 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Middle from './components/Middle';
 import './App.css';
-import AddField from './components/AddField';
+import Dashboard from './screens/Dashboard';
+import Login from './screens/Login';
+import Register from './screens/Register';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const App = () => {
     return (
         <div className='App'>
-            <div className='xyz'>
-                <Header/>
-            </div>
-            <div className='abc'>
-                <Middle/>
-            </div>
-            <div className='def'>
-                <AddField/>
-            </div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Register />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/dashboard' element={<Dashboard />} />
+                </Routes>               
+            </BrowserRouter>
         </div>
     );
 };

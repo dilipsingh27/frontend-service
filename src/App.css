@@ -2,23 +2,3 @@
   margin:0;
   padding:0;
 } */
-.App {
-  display:flex;
-  flex-direction: row;
-  
-}
-.xyz{
-  display:flex;
-  flex-direction: column;
-  width:22%;
-}
-.abc {
-  display: flex;
-  flex-direction: column;
-  width:22%;
-}
-.def {
-  display: flex;
-  flex-direction: column;
-  width:56%;
-}
