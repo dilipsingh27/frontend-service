@@ -33,7 +33,7 @@ const AddField = ({contentById,showModal,setShowModal}) => {
 
             <div className="content-type-heading">
                 <div className="content-title">
-                    <p>{contentById.name}</p>
+                    <p>{contentById.name ? contentById.name : 'Company_Profile'}</p>
                 </div>
                 <div className="content-type-edit" onClick={() => setShowModal(true)} >
                     <img src={userPencil} alt="" />

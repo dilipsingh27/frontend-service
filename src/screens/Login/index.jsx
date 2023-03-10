@@ -85,7 +85,9 @@ const Login = () => {
                         <p className="form--error">{errors.password}</p>
                     ) : null}
                     <button type="submit">Login</button>
-                    <p>Forgot password ? </p>
+                    <div className="reset-pas">
+                        <p>Forgot password ? </p>
+                    </div>
                 </form>
             </div>
         </div>

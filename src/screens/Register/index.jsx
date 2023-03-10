@@ -57,7 +57,7 @@ const Register = () => {
                 </div>
             </div>
             <div className="right--container">
-                <h1>Login to your CMS+ account</h1>
+                <h1>Register to your CMS+ account</h1>
                 <form action="" className="form--container" onSubmit={handleSubmit}>
                     <p>Email</p>
                     <input
@@ -84,7 +84,9 @@ const Register = () => {
                         <p className="form--error">{errors.password}</p>
                     ) : null}
                     <button type="submit">Register</button>
-                    <p>Forgot password ? </p>
+                    <div className="reset-pas">
+                        <p>Forgot password ? </p>
+                    </div>
                 </form>
             </div>
         </div>

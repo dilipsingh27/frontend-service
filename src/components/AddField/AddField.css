@@ -30,6 +30,7 @@
 .content-title {
     margin-left: 20px;
     color: rgb(79,79,79);
+    font-weight: 600;
 }
 .content-type-edit {
     margin-left: 10px;
@@ -119,7 +120,7 @@
     width:25px;
 }
 .field-delete{
-    margin-right: 20px;
+    margin-right: 45px;
 }
 .field-delete > img {
     height:25px;
