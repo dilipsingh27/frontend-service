@@ -9,8 +9,7 @@ import axios from 'axios';
 const Dashboard = () => {
     const [contents, setContents] = useState([]);
     const [contentById,setContentById] = useState({});
-    const [showModal, setShowModal] = useState(false);
-    const [click,setClick] = useState(false);
+    const [showModal, setShowModal] = React.useState(false);
 
     useEffect(() => {
         axios
@@ -33,7 +32,7 @@ const Dashboard = () => {
                 <Middle contents={contents} setContentById={setContentById} setShowModal={setShowModal} showModal={showModal}/>
             </div>
             <div className='right'>
-                <AddField contentById={contentById} setContentById={setContentById} click={click} onClick={()=>setClick(true)} setShowModal={setShowModal} showModal={showModal}/>
+                <AddField contentById={contentById} setContentById={setContentById} setShowModal={setShowModal} showModal={showModal}/>
             </div>
         </div>
     );

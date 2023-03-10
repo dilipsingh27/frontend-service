@@ -24,6 +24,7 @@
 .collection-details{
     background-color: rgb(39,39,39);
     height:800px;
+    /* overflow:hidden; */
     /* width:20%; */
 }
 
