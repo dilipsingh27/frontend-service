@@ -28,11 +28,12 @@ const Login = () => {
         // console.log(token);
         // console.log(res.data);
         setToken(res.data);
+        localStorage.setItem('token', res.data);
         navigate('/dashboard');
     };
 
-    console.log(token);
-    localStorage.setItem('token', token);
+    
+    
 
     const { values, errors, handleChange, handleBlur, touched, handleSubmit } =
     useFormik({
@@ -41,7 +42,7 @@ const Login = () => {
         onSubmit,
     });
 
-
+    console.log(token);
     console.log(errors);
     return (
         <div className="main--container">

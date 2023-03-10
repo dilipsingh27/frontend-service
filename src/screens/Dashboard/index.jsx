@@ -11,6 +11,13 @@ const Dashboard = () => {
     const [contentById,setContentById] = useState({});
     const [showModal, setShowModal] = React.useState(false);
 
+    // const tokenString = localStorage.getItem('token');
+    // let token = '';
+    // if (tokenString) {
+    //     token = JSON.stringify(tokenString);
+    // }
+    // console.log('@##@@@@',token);
+
     useEffect(() => {
         axios
             .get('http://localhost:5000/api/contents')

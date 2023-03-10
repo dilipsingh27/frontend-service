@@ -16,7 +16,11 @@
     margin: 0 20px;
     /* font-size: 40px; */
     height:110px;
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.content-header > p {
+    padding-top: 20px;
 }
 .content-table {
     display: flex;
@@ -26,6 +30,7 @@
     padding-right:25px;
     background-color: rgb(212,214,228);
     height:822px;
+    font-weight: 400;
 }
 
 .table-header {
@@ -37,6 +42,7 @@
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 15px;
+    color: rgb(95,96,101);
 }
 
 .content-search > img{
@@ -70,10 +76,16 @@
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    /* color: black; */
+    color: rgb(95,96,101);
+    
+}
+
+.content-name-holder:hover {
+    background-color: rgb(79,32,198);
+    color: white;
 }
 .ssss{
-    color: rgb(128,128,128);
+   
     z-index: 9999;
 }
 

@@ -8,12 +8,13 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const App = () => {
     return (
-        <div className='App'>
+        <div className='App' id ="app">
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Register />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/dashboard' element={<Dashboard />} />
+                    
                 </Routes>               
             </BrowserRouter>
         </div>
